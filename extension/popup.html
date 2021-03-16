@@ -8,15 +8,25 @@
       - Policy documentation[1] for details and explanation.
       -
       - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
-     -->
+    -->
   </head>
-  <body>
-	<form action='./src/connect_to_email.js' method='post'>
-		<h2>Email Connection</h2>
-		<input type="text" id="email" placeholder="type your email" />
-		<input type="password" id="password" placeholder="type the password" />
-		<br/>
-		<input type="button" id="connexion" value="Email Connection"/>
-	</form>
+  <body> 
+    <table width="600px" height="600px">
+      <form action='./src/connect_to_email.js' method='post' >
+        <h2>Email Connection</h2>
+        <input type="text" id="email" placeholder="type your email" />
+        <br/>
+        <br/>
+        <select id="type">
+          <option type="option" id="type" value="Action">Action</option>
+          <option type="option" id="type" value="Question">Question</option>
+          <option type="option" id="type" value="Read">Read</option>
+          <option type="option" id="type" value="Invitation">Invitation</option>
+          <option type="option" id="type" value="Noreply">No reply</option>
+        </select>
+        <br/> 
+        <input type="button" id="send" value="Send"/>
+      </form>
+    </table>
   </body>
 </html>

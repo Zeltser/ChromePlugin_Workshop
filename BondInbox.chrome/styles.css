@@ -1,0 +1,10 @@
+.intention{
+  width: fit-content;
+  padding: 5px;
+  border: solid 1px #dbe5f0;
+  border-radius: 1000px;
+  color:#007bff;
+
+}
+.intention:hover{
+}
