@@ -1,11 +1,11 @@
 {
     "manifest_version": 2,
-    "name": "chrome plugin",
-    "description": "This extension blocks internet",
+    "name": "Email Chrome plugin",
+    "description": "This extension connects to an email",
     "version": "1.0",
     "permissions": [
-                  "http://*/*",
-                  "https://*/*"
+                  "https://gmail.com/",
+                  "https://outlook.com/"
     ],
     "browser_action": {
       "default_icon": "logo_plugin.png",
