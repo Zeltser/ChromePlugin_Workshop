@@ -2,27 +2,49 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <link href="./view/style_popup.css" rel="stylesheet" />
     <title>Block Access Popup</title>
   </head>
   <body> 
+
+    <h2>BORD</h2>
     <table width="600px" height="600px">
-      <form action='./src/connect_to_email.js' method='post' >
-        <h2>Email Connection</h2>
-        <input type="text" id="email" placeholder="type your email" />
-        <br/>
-        <br/>
-        <select id="type">
-          <option type="option" id="type" value="Action">Action</option>
-          <option type="option" id="type" value="Question">Question</option>
-          <option type="option" id="type" value="Read">Read</option>
-          <option type="option" id="type" value="Invitation">Invitation</option>
-          <option type="option" id="type" value="Noreply">No reply</option>
+        <form>
+        <label>Quick add to : </label>
+        <input type="checkbox" name="quick" value="Readinglist">Reading list</input>
+        <input type="checkbox" name="quick" value="NotToSelf">Not To Self</input>
+        <input type="checkbox" name="quick" value="Email">Email</input>
+        <input type="checkbox" name="quick" value="Custom">Custom</input>
+        </form>
+      <br><br>
+      <h3>Intention details :</h3><br>
+        <label>Type :  </label>
+        <input type="checkbox" name="type" value="action">Action</input>
+        <input type="checkbox" name="type" value="question">Question</input>
+        <input type="checkbox" name="type" value="read">Read</input>
+        <input type="checkbox" name="type" value="invitation">Invitation</input>
+        <input type="checkbox" name="type" value="noReply">No reply</input>
+        <br><br>
+        <label>Group :  </label>
+        <select id="group">
+          <option type="option" id="group" value="gr1">group 1</option>
+          <option type="option" id="group" value="gr2">group 2</option>
+          <option type="option" id="group" value="gr3">group 3</option>
+          <option type="option" id="group" value="gr4">group 4</option>
+          <option type="option" id="tygrouppe" value="gr5">group 5</option>
         </select>
-        <br/> 
-        <p>Email:</p> <input type="text" id="email" placeholder="type your email" />
-        <input type="button" id="connexion" value="Email Connection"/>
-        <input type="button" id="send" value="Send"/>
-      </form>
+        <br><br>
+          <label>Description :  </label>
+          <textarea id="description" name="description" placeholder='description' width="150px" height="30px">
+          </textarea>
+        <br><br> 
+          <label>Recipient(s) :  </label>
+          <input type="text" name="recip">
+        <br><br> 
+          <label>Deadline : </label>
+          <input type="date" name="deadline"><br>
+          <input type="button" name="Assigne" value="Assigne">
+        </form>
     </table>
   </body>
 </html>
