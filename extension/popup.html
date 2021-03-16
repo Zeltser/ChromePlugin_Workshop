@@ -3,12 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>Block Access Popup</title>
-    <!--
-      - JavaScript and HTML must be in separate files: see our Content Security
-      - Policy documentation[1] for details and explanation.
-      -
-      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
-    -->
   </head>
   <body> 
     <table width="600px" height="600px">
@@ -25,6 +19,8 @@
           <option type="option" id="type" value="Noreply">No reply</option>
         </select>
         <br/> 
+        <p>Email:</p> <input type="text" id="email" placeholder="type your email" />
+        <input type="button" id="connexion" value="Email Connection"/>
         <input type="button" id="send" value="Send"/>
       </form>
     </table>
